@@ -1,16 +1,16 @@
 <template>
   <el-container>
-    {{ bubbleSort }}
+    {{ sort }}
   </el-container>
 </template>
 
 <script lang="ts">
 import { Vue } from 'vue-class-component';
-import { bubbleSort } from '@/libs/sort/bubble-sort';
+import { shakerSort } from '@/libs/sort/shaker-sort';
 
 export default class Sort extends Vue {
   numList = [5, 8, 2, 4, 8, 1, 2, 9, 10, 3];
 
-  bubbleSort = bubbleSort(this.numList, true);
+  sort = shakerSort(this.numList);
 }
 </script>
