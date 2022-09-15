@@ -6,11 +6,11 @@
 
 <script lang="ts">
 import { Vue } from 'vue-class-component';
-import { insertionSort } from '@/libs/sort/insertion-sort';
+import { selectionSort } from '@/libs/sort/selectionSort';
 
 export default class Sort extends Vue {
   numList = [5, 8, 2, 4, 8, 1, 2, 9, 10, 3];
 
-  sort = insertionSort(this.numList);
+  sort = selectionSort(this.numList);
 }
 </script>
