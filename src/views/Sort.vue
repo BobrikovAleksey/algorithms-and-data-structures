@@ -6,11 +6,11 @@
 
 <script lang="ts">
 import { Vue } from 'vue-class-component';
-import { shakerSort } from '@/libs/sort/shaker-sort';
+import { combSort } from '@/libs/sort/comb-sort';
 
 export default class Sort extends Vue {
   numList = [5, 8, 2, 4, 8, 1, 2, 9, 10, 3];
 
-  sort = shakerSort(this.numList);
+  sort = combSort(this.numList);
 }
 </script>
